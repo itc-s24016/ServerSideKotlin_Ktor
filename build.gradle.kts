@@ -25,6 +25,8 @@ dependencies {
     implementation(libs.ktor.server.resources) //追加
     implementation(libs.ktor.server.content.negotiation) //追加
     implementation(libs.ktor.serialization.kotlinx.json) //追加
+    implementation(libs.ktor.server.auth)//追加
+    implementation(libs.ktor.server.sessions)//追加
     testImplementation(libs.ktor.server.test.host)
     testImplementation(libs.kotlin.test.junit)
 }

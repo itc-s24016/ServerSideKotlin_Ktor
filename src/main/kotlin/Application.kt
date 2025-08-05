@@ -7,6 +7,9 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    configureRouting()
-    configureContentNegotiation() //追記
+    //認証が最初に来るように気をつける
+    configureSessions() //セッションを探す
+    configureAuthentication() //認証する
+    configureRouting() //ルーティング
+    configureContentNegotiation() //設定ファイルを読み込む？
 }
