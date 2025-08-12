@@ -12,4 +12,5 @@ fun Application.module() {
     configureAuthentication() //認証する
     configureRouting() //ルーティング
     configureContentNegotiation() //設定ファイルを読み込む？
+    configureDatabase() //データベース接続を設定する (ktor × exposed)
 }

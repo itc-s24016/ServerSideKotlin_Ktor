@@ -27,6 +27,10 @@ dependencies {
     implementation(libs.ktor.serialization.kotlinx.json) //追加
     implementation(libs.ktor.server.auth)//追加
     implementation(libs.ktor.server.sessions)//追加
+    implementation(libs.exposed.core)
+    implementation(libs.exposed.jdbc)
+    implementation(libs.exposed.dao)
+    runtimeOnly(libs.postgres.driver)
     testImplementation(libs.ktor.server.test.host)
     testImplementation(libs.kotlin.test.junit)
 }
